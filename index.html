@@ -346,7 +346,7 @@ footer {
                 <label>CAPTCHA:</label>
 
                 <div class="captcha-image" id="captcha">
-                    b1S5DD
+                    
                 </div>
 
                 <span class="refresh" onclick="refreshCaptcha()">↻</span>
@@ -412,6 +412,7 @@ function submitResult() {
         alert("Incorrect CAPTCHA.");
     }
 }
+window.onload=refreshCaptcha;
 </script>
 
 </body>
