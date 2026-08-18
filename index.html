@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Result NTA</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    width: 100%;
+}
+
+.top-header {
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.left-logo {
+    position: absolute;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emblem {
+    width: 42px;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    text-align: center;
+}
+
+.ministry {
+    font-size: 8px;
+    line-height: 1.2;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.right-logo {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-placeholder {
+    width: 50px;
+    height: 45px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    text-align: center;
+}
+
+.blue-line {
+    height: 18px;
+    background: #002b49;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding-top: 35px;
+}
+
+.result-box {
+    width: 345px;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    min-height: 155px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.08);
+}
+
+/* Result heading */
+.result-title {
+    height: 29px;
+    background: #002b49;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 9px;
+    font-size: 16px;
+}
+
+.lock {
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+/* Form */
+.form-area {
+    padding: 13px 15px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+label {
+    width: 115px;
+    text-align: right;
+    margin-right: 12px;
+    color: #777;
+    font-size: 12px;
+}
+
+input {
+    width: 210px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 7px;
+}
+
+.captcha-image {
+    width: 75px;
+    height: 28px;
+    background: #174c9c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.refresh {
+    margin-left: 7px;
+    color: #32a852;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.submit-row {
+    justify-content: center;
+    margin-top: 2px;
+}
+
+button {
+    border: none;
+    background: #16864c;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #126d3e;
+}
+
+/* Demo warning */
+.demo-label {
+    text-align: center;
+    margin-top: 20px;
+    color: #b00020;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    height: 51px;
+    background: #002b49;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 11px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="top-header">
+
+        <div class="left-logo">
+            <div class="emblem">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXLRfzrwXgY4IJ7tvAeGuQ-YzLBrMkH_BMAU8agQ2Bw&s=10" width="120 " height="90">
+                
+            </div>
+                
+            <div class="ministry">
+                Department of Higher Education<br>
+                Ministry of Education
+            </div>
+        </div>
+
+        <div class="title">
+            JOINT ENTRANCE EXAMINATION (MAIN) — 2026 SESSION 2<br>
+            <b>NTA SCORE: Paper 1 (B.E./B.Tech.)</b>
+        </div>
+
+        <div class="right-logo">
+            <div class="logo-placeholder">
+                NTA<br>
+            </div>
+
+            <div class="logo-placeholder">
+                EXAM<br>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="blue-line"></div>
+
+</header>
+
+
+<main>
+
+    <div class="result-box">
+
+        <div class="result-title">
+            <span class="lock">▣</span>
+            View Result
+        </div>
+
+        <div class="form-area">
+
+            <div class="form-row">
+                <label>Enter CAPTCHA<br>(case sensitive):</label>
+
+                <input type="text" id="captchaInput">
+            </div>
+
+            <div class="form-row">
+                <label>CAPTCHA:</label>
+
+                <div class="captcha-image" id="captcha">
+                    b1S5AD
+                </div>
+
+                <span class="refresh" onclick="refreshCaptcha()">↻</span>
+            </div>
+
+            <div class="form-row submit-row">
+                <button onclick="submitResult()">SUBMIT</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="pdfContainer" style="display: none;">
+    <iframe
+        src="result.pdf"
+        width="100%"
+        height="800px"
+        style="border: none;">
+    </iframe>
+    </div>
+
+   
+
+</main>
+
+
+<footer>
+    This site is designed and hosted by NIC PEP Division. The contents are provided by NTA.For any further information,please contact NTA
+</footer>
+
+
+<script>
+const captchas = [
+    "b1S5AD",
+    "K7p2QX",
+    "m9A4Zc",
+    "R2x8Bn"
+];
+
+function refreshCaptcha() {
+    const random =
+        captchas[Math.floor(Math.random() * captchas.length)];
+
+    document.getElementById("captcha").textContent = random;
+}
+
+function submitResult() {
+    const entered =
+        document.getElementById("captchaInput").value;
+
+    const actual =
+        document.getElementById("captcha").textContent;
+
+    if (entered === actual) {
+
+        document.getElementById("pdfContainer").style.display = "block";
+
+        document.getElementById("pdfContainer").scrollIntoView({
+            behavior: "smooth"
+        });
+
+    } else {
+        alert("Incorrect CAPTCHA.");
+    }
+}
+</script>
+
+</body>
+</html>
